@@ -1,3 +1,106 @@
-<h1>
-Hello World
-</h1>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<!-- -- Semantic-UI CSS & JS files included here -- -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/button.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/table.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/transition.min.css">
+<style type="text/css">
+    div.ui.dropdown{
+        min-height: 1em !important;
+    }
+</style>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/transition.js"></script>
+
+<h1>HTML FORM</h1>
+<div style="overflow-x:auto">
+<form action="/pridict" method="post"  enctype="multipart/form-data">
+    <table class="ui blue celled table collapsing unstackable sortable">
+        <tr>
+            <td>CRIM</td>
+            <td><input type="text" name="CRIM" >
+            </td>
+        </tr>
+        <tr>
+            <td>ZN</td>
+            <td><input type="text" name="ZN" >
+            </td>
+        </tr>
+        <tr>
+            <td>INDUS</td>
+            <td><input type="text" name="INDUS" >
+            </td>
+        </tr>
+        <tr>
+            <td>CHAS</td>
+            <td><input type="text" name="CHAS" >
+            </td>
+        </tr>
+        <tr>
+            <td>NOX</td>
+            <td><input type="text" name="NOX" >
+            </td>
+        </tr>
+        <tr>
+            <td>RM</td>
+            <td><input type="text" name="RM" >
+            </td>
+        </tr>
+        <tr>
+            <td>AGE</td>
+            <td><input type="text" name="AGE" >
+            </td>
+        </tr>
+        <tr>
+            <td>DIS</td>
+            <td><input type="text" name="DIS" >
+            </td>
+        </tr>
+        <tr>
+            <td>RAD</td>
+            <td><input type="text" name="RAD" >
+            </td>
+        </tr>
+        <tr>
+            <td>TAX</td>
+            <td><input type="text" name="TAX" >
+            </td>
+        </tr>
+        <tr>
+            <td>PTRATIO</td>
+            <td><input type="text" name="PTRATIO" >
+            </td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td><input type="text" name="B" >
+            </td>
+        </tr>
+        <tr>
+            <td>LSTAT</td>
+            <td><input type="text" name="LSTAT" >
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" name="action" value="Submit" class="ui mini blue mini button"></td>
+        </tr>
+    </table>
+</form>
+
+{{prediction_text}}
+</div>
+<script type="text/javascript">
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+    $(".ui.dropdown").dropdown();
+</script>
+<!--
+<?php
+/* Powered By Haysky Code Generator: KEY
+[["text","CRIM"],["text","ZN"],["text","INDUS"],["text","CHAS"],["text","NOX"],["text","RM"],["text","AGE"],["text","DIS"],["text","RAD"],["text","TAX"],["text","PTRATIO"],["text","B"],["text","LSTAT"],["submit","HTML Form"]]
+*/
+?>
+-->
